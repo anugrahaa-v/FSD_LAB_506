@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Attack Simulator + AI Defender</title>
+
+    <!-- Tailwind CSS + Typography Plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <!-- ================= HEADER ================= -->
+    <header class="bg-slate-950 border-b border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+
+                <div class="w-11 h-11 bg-cyan-500 rounded-lg flex items-center justify-center">
+                    <span class="text-2xl">🛡️</span>
+                </div>
+
+                <div>
+                    <h1 class="text-xl font-bold">
+                        Cyber<span class="text-cyan-400">Shield</span>
+                    </h1>
+
+                    <p class="text-xs text-slate-400">
+                        AI-Powered Cyber Defense
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- ================= NAVIGATION ================= -->
+            <nav class="hidden md:flex items-center gap-8">
+
+                <a href="#home"
+                   class="text-slate-300 hover:text-cyan-400 transition duration-300">
+                    Home
+                </a>
+
+                <a href="#simulator"
+                   class="text-slate-300 hover:text-cyan-400 transition duration-300">
+                    Simulator
+                </a>
+
+                <a href="#defender"
+                   class="text-slate-300 hover:text-cyan-400 transition duration-300">
+                    AI Defender
+                </a>
+
+                <a href="#about"
+                   class="text-slate-300 hover:text-cyan-400 transition duration-300">
+                    About
+                </a>
+
+            </nav>
+
+            <!-- Header Button -->
+            <a href="#simulator"
+               class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold px-5 py-2 rounded-lg transition duration-300">
+                Get Started
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- ================= LANDING / HERO ================= -->
+        <section id="home" class="min-h-[85vh] flex items-center">
+
+            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+
+                    <div class="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 px-4 py-2 rounded-full text-sm mb-6">
+
+                        <span class="w-2 h-2 bg-cyan-400 rounded-full"></span>
+
+                        AI-Powered Cyber Security
+
+                    </div>
+
+
+                    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+
+                        Simulate Attacks.
+
+                        <span class="text-cyan-400">
+                            Defend Smarter.
+                        </span>
+
+                    </h2>
+
+
+                    <!-- Typography Plugin -->
+                    <article class="prose prose-invert max-w-none mb-8">
+
+                        <p class="text-lg text-slate-400">
+                            Cyber Attack Simulator + AI Defender is a
+                            cybersecurity platform designed to demonstrate
+                            how cyber threats can be simulated, detected,
+                            analyzed, and addressed using intelligent
+                            defensive techniques.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-4">
+
+                        <a href="#simulator"
+                           class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-lg transition duration-300">
+
+                            Explore Simulator
+
+                        </a>
+
+                        <a href="#defender"
+                           class="border border-slate-700 hover:border-cyan-400 px-6 py-3 rounded-lg transition duration-300">
+
+                            AI Defender
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SECURITY DASHBOARD ================= -->
+                <div>
+
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl">
+
+                        <div class="flex items-center justify-between mb-6">
+
+                            <div>
+
+                                <p class="text-sm text-slate-400">
+                                    Security Status
+                                </p>
+
+                                <h3 class="text-2xl font-bold text-green-400">
+                                    Protected
+                                </h3>
+
+                            </div>
+
+
+                            <div class="w-14 h-14 rounded-full border-4 border-green-400 flex items-center justify-center">
+
+                                <span class="text-green-400 text-2xl">
+                                    ✓
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Threat Detection -->
+                        <div class="bg-slate-800 rounded-lg p-4 mb-4">
+
+                            <div class="flex justify-between mb-2">
+
+                                <span class="text-slate-300">
+                                    Threat Detection
+                                </span>
+
+                                <span class="text-cyan-400">
+                                    94%
+                                </span>
+
+                            </div>
+
+                            <div class="h-2 bg-slate-700 rounded-full">
+
+                                <div class="h-2 bg-cyan-400 rounded-full w-[94%]"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Threats -->
+                        <div class="bg-slate-800 rounded-lg p-4 mb-4">
+
+                            <div class="flex justify-between">
+
+                                <span class="text-slate-300">
+                                    Threats Detected
+                                </span>
+
+                                <span class="text-red-400 font-bold">
+                                    12
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AI Response -->
+                        <div class="bg-slate-800 rounded-lg p-4">
+
+                            <div class="flex justify-between">
+
+                                <span class="text-slate-300">
+                                    AI Response
+                                </span>
+
+                                <span class="text-green-400 font-bold">
+                                    Active
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SIMULATOR ================= -->
+        <section id="simulator" class="bg-slate-900 py-20">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="text-center mb-12">
+
+                    <p class="text-cyan-400 font-semibold mb-2">
+                        ATTACK SIMULATION
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Understand the Threat
+                    </h2>
+
+                    <p class="text-slate-400 max-w-2xl mx-auto">
+                        Explore controlled cybersecurity scenarios
+                        to understand how different threats can affect
+                        digital systems.
+                    </p>
+
+                </div>
+
+
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <!-- Card 1 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition duration-300">
+
+                        <div class="text-3xl mb-4">
+                            🔍
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Threat Detection
+                        </h3>
+
+                        <p class="text-slate-400">
+                            Identify suspicious activities and
+                            potential security threats in a
+                            controlled environment.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition duration-300">
+
+                        <div class="text-3xl mb-4">
+                            ⚠️
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Attack Simulation
+                        </h3>
+
+                        <p class="text-slate-400">
+                            Simulate cybersecurity scenarios to
+                            understand how different threats
+                            may affect a system.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 hover:border-cyan-500 transition duration-300">
+
+                        <div class="text-3xl mb-4">
+                            📊
+                        </div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Security Analysis
+                        </h3>
+
+                        <p class="text-slate-400">
+                            Analyze security events and identify
+                            potential risks using meaningful
+                            security indicators.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AI DEFENDER ================= -->
+        <section id="defender" class="py-20">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                    <!-- Content -->
+                    <div>
+
+                        <p class="text-cyan-400 font-semibold mb-2">
+                            AI DEFENDER
+                        </p>
+
+
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                            Intelligent Defense Against
+                            Cyber Threats
+                        </h2>
+
+
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            The AI Defender focuses on intelligent
+                            analysis of security events. It can help
+                            identify unusual patterns, assess potential
+                            risks, and recommend appropriate defensive
+                            actions.
+                        </p>
+
+
+                        <ul class="space-y-4 text-slate-300">
+
+                            <li class="flex gap-3">
+
+                                <span class="text-cyan-400">
+                                    ✓
+                                </span>
+
+                                Detect suspicious patterns
+
+                            </li>
+
+
+                            <li class="flex gap-3">
+
+                                <span class="text-cyan-400">
+                                    ✓
+                                </span>
+
+                                Analyze potential security risks
+
+                            </li>
+
+
+                            <li class="flex gap-3">
+
+                                <span class="text-cyan-400">
+                                    ✓
+                                </span>
+
+                                Provide intelligent recommendations
+
+                            </li>
+
+
+                            <li class="flex gap-3">
+
+                                <span class="text-cyan-400">
+                                    ✓
+                                </span>
+
+                                Support faster security decisions
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- AI Dashboard -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+
+                        <div class="flex justify-between items-center mb-8">
+
+                            <h3 class="text-xl font-bold">
+                                AI Defender
+                            </h3>
+
+                            <span class="px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-sm">
+                                ● Online
+                            </span>
+
+                        </div>
+
+
+                        <!-- Network Risk -->
+                        <div class="mb-6">
+
+                            <div class="flex justify-between mb-2">
+
+                                <span class="text-slate-400">
+                                    Network Risk
+                                </span>
+
+                                <span class="text-yellow-400">
+                                    Medium
+                                </span>
+
+                            </div>
+
+                            <div class="h-2 bg-slate-800 rounded-full">
+
+                                <div class="h-2 bg-yellow-400 rounded-full w-[55%]"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- AI Confidence -->
+                        <div class="mb-6">
+
+                            <div class="flex justify-between mb-2">
+
+                                <span class="text-slate-400">
+                                    AI Confidence
+                                </span>
+
+                                <span class="text-cyan-400">
+                                    91%
+                                </span>
+
+                            </div>
+
+                            <div class="h-2 bg-slate-800 rounded-full">
+
+                                <div class="h-2 bg-cyan-400 rounded-full w-[91%]"></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Recommendation -->
+                        <div class="border border-cyan-500/30 bg-cyan-500/5 rounded-lg p-4">
+
+                            <p class="text-sm text-cyan-400 mb-1">
+                                AI Recommendation
+                            </p>
+
+                            <p class="text-slate-300">
+                                Monitor unusual activity and review
+                                detected security events.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="bg-slate-900 py-20">
+
+            <div class="max-w-4xl mx-auto px-6 text-center">
+
+                <p class="text-cyan-400 font-semibold mb-2">
+                    ABOUT THE PROJECT
+                </p>
+
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Building Safer Digital Environments
+                </h2>
+
+
+                <article class="prose prose-invert max-w-none mx-auto">
+
+                    <p class="text-slate-400">
+                        Cyber Attack Simulator + AI Defender combines
+                        cybersecurity concepts with artificial
+                        intelligence to create an interactive
+                        security-oriented platform. The project
+                        demonstrates how simulated threats can be
+                        analyzed and how intelligent systems can assist
+                        in identifying and responding to potential
+                        security risks.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-slate-950 border-t border-slate-800">
+
+        <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <p class="text-slate-500 text-sm">
+                © 2026 CyberShield — Cyber Attack Simulator + AI Defender
+            </p>
+
+            <p class="text-slate-500 text-sm">
+                Cyber Security • AI • Full Stack Development
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
